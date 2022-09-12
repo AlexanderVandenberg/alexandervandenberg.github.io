@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Vandenberg</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Projects</a>
+					</header> 
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="about_me.html">About Me</a></li>
+						<li class="active"><a href="cyclistic.html">Cyclistic Case Study</a></li>
+						<li><a href="resume.html">Resume</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="mailto: vandenberg.a@northeastern.edu" target="_blank">Email </a></li>
+						<li><a href="https://www.linkedin.com/in/alexander-vandenberg-33a92821b/" target="_blank"> LinkedIn </a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!--<span class="date">April 25, 2017</span>-->
+									<h1>Data Analytics <br> Case Study</h1>
+									<p><u><b>Introduction:</b></u> This case study is based on data from a Chicago based bikeshare company named Cyclistic.  
+										This study follows the six data analysis steps: <b>ask, prepare, process, analyze, visualize, act</b>.
+									The raw data can be found here and the post-analysis excel spreasheet can be found here.<br /></p>
+
+									</header>
+									<div class="image main"><img src="images/logo.jpg" alt="" /></div>
+
+									<p><u><b>1: Ask</b></u> <br> Cyclistic has casual riders that pay a fee for each ride in addition to members 
+										who pay an annual fee for unlimited rides. The question for this analysis is <b>how do annual 
+										members and casual riders use Cyclistic bikes differently</b>? This question's answer can be 
+										used to encourage more casual riders to switch to annual members and generate more revenue.</p>
+
+									
+
+									<p><u><b>2: Prepare</b></u> <br>The data to be analyzed is from .csv file that contains data for Cyclistic trips 
+										for January 2022. This is first party source since it comes from directly from Cyclistic. It is a comprehensive list 
+										all 103,770 trips for the month of January.  To prepare the data for analysis, I converted the file to a .xlsx file.   </p>
+
+										
+								
+									<p><u><b>3: Process</b></u> <br>I created column E called "ride_length" by subtracting the start time from end time and changing to the 
+										time format. I also created column F called "day_of_week" using the TEXT function on the "started_at" column. I cleaned the data by 
+										filtering it to just include rows with rides that lasted 0 or less minutes and deleting them.  </p>
+
+									<figure>
+										<img src="images/process.jpg" alt="" style="width:100%">
+										<figcaption><center>Snapshots of the columns I added.</center></figcaption>
+									</figure>
+
+									<p><br></p>
+
+									<p><u><b>4: Analyze</b></u> <br>I created the following pivot tables to aggregate the data:</p>
+									
+									<figure>
+										<img src="images/Analyze_1.jpg" alt="" style="width:100%">
+										<figcaption><center>This pivot table lists the number of rides that occured on each day of the week according to 
+											member type. It also displays the percentage of rides that were member or casual occuring on each day of the week.  </center></figcaption>
+									</figure>
+
+									<p><br></p>
+									
+									<figure>
+										<img src="images/Analyze_2.jpg" alt="" style="width:100%">
+										<figcaption><center>This pivot table lists the average ride lengths in minutes during each day of the week according to memeber type. </center></figcaption>
+									</figure>
+
+									<p><br></p>
+
+									<p><u><b>5: Share</b></u> <br>I created graphs from the pivot tables in order to gain insights from the data:</p>
+
+									
+									<figure>
+										<img src="images/Share_1.jpg" alt="" style="width:100%">
+										<figcaption><center>The number of casual rides is similar for every weekday except for a spike on Saturday. This could be 
+											because most people have more free time to ride casually on Saturdays. Members have the opposite outcome of 
+											riding more on weekdays than weekends. This may be because they use bikes to get to work or events that regularly 
+											happen on weekdays.  In addition, members ride much more often than casual users. This can be because members pay a 
+											flat fee for the month while casuals have to pay every time they ride.</center></figcaption>
+									</figure>
+
+
+									<p><br></p>
+									
+									<figure>
+										<img src="images/Share_2.jpg" alt="" style="width:100%">
+										<figcaption><center>Out of all riders, a greater percentage of casual riders ride on Sunday and Saturday. Members tend 
+											to have a higher percentage during the weekdays than weekends. Just like the first graph, this can be because 
+											members use bikes to get to work or events that regularly happen on weekdays. </figcaption>
+									</figure>
+										
+									<p><br></p>
+
+									<figure>
+										<img src="images/Share_3.jpg" alt="" style="width:100%">
+										<figcaption><center>Casual riders tend to ride for twice to three times as long as members. This may be because casual riders have to 
+											pay for each ride and want to make the most of it by riding longer while member tend to ride more times for less 
+											time each ride. Casual times also vary much more depending on the day of the week than members. This can be due to 
+											members having consistent routes that they ride often.</figcaption>
+									</figure>
+										
+									<p><br></p>
+
+									<p><u><b>6: Act</b></u> <br>The top three recommendations based on my analysis:
+										<ol>
+											<li>Advertise memberships as an inexpensive way to get to work.</li>
+											<li>Offer cheaper membership that only allow the customer to ride on the weekends. This targets the relatively 
+												large amount of casual rides that ride on weekends.  </li>
+											<li>Change the casual ride to cost per minute of riding. This insentivises people to get a membership if they 
+												would like to ride for a longer time without penalty.</li>
+										  </ol>
+									</p>
+							</section>
+
+					</div>
+
+				<!-- Footer 
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>-->
+
+				<!-- Copyright 
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>-->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
